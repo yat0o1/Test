@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Clicker</h1>
+        <div id="counter">0</div>
+        <button id="clickBtn">Click me!</button>
+    </div>
+
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+        const button = document.getElementById('clickBtn');
+
+        button.addEventListener('click', () => {
+            count++;
+            counterElement.textContent = count;
+        });
+    </script>
+</body>
+</html>
